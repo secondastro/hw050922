@@ -77,8 +77,8 @@ public class Main {
         double salary = 29000;
         double sum = 0;
         for (int i = 1; i <= 12; i++) {
-            sum += sum / 100;
             sum += salary;
+            sum += sum*0.01;
             String formatSum = String.format("%.2f", sum);
             System.out.println("Месяц " + i + ", сумма накоплений равна " + formatSum + " рублей");
         }

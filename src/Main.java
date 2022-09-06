@@ -74,12 +74,13 @@ public class Main {
     }
     //task9
     public static void task9() {
-        int salary = 29000;
-        int sum = 0;
+        double salary = 29000;
+        double sum = 0;
         for (int i = 1; i <= 12; i++) {
             sum += sum / 100;
             sum += salary;
-            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
+            String formatSum = String.format("%.2f", sum);
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + formatSum + " рублей");
         }
         System.out.println();
     }
